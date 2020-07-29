@@ -1,4 +1,4 @@
-function is_stock
+function is_stock	;returns "Y" if order is a stock order, else "N"
 	order	,d	;order number
 	chn182	,d	;channel coptbl open on
 ;
