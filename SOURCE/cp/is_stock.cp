@@ -206,9 +206,9 @@ eof,
 	if (totwgt .lt. 1) value = 'N'			;
 
 endoff,
-	close chnic
-	close chn175
-	close chn045
+	if (chnic) close chnic
+	if (chn175) close chn175
+	if (chn045) close chn045
 	freturn value
 end
 
